@@ -28,5 +28,5 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ${{ secrets.AWS_REGION }}
       - name: AWS Demo Access
-        run: aws s3 ls s3://cibucket2024
+        run: aws s3 sync ci-example/public  s3://cibucket2024
 
