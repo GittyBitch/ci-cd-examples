@@ -32,4 +32,4 @@ jobs:
       - name: AWS Bucket Access
         env: 
           AWS_BUCKET_NAME: cibucket2024
-        run: aws s3 sync build  s3://${{ AWS_BUCKET_NAME }}
+        run: aws s3 sync build  s3://cibucket2024
